@@ -13,11 +13,12 @@ click.addEventListener("click",
     const userEmail = document.getElementById("email").value;
     console.log(userEmail);
     
-    if (subscribers.includes(userEmail)) {
+        // per ogni giro del loop mettiamo a confronto userEmail con un elemento dell'array 
+        for (let i = 0; i < subscribers.length; i++) {
+        if ( userEmail === subscribers[i]) {
         console.log("access granted");
-    } else {
-        console.log("access denied");
-    }
+        } else {}
+        }
     }
 );
 
